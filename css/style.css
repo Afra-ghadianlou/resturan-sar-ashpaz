@@ -52,7 +52,7 @@ li {
     /* --white-color5: #c5a059; نسکافه ای */
     /* --white-color5: #d4af37; زرد */
 
-    --white-color1: #121212;
+    --white-color1: #413f3f;
     --white-color2: #d4d4d4;
     --white-color3: #800020cb;
     --white-color4: #800020;
@@ -365,7 +365,7 @@ body {
     font-size: 10px;
     position: relative;
     top: 27px;
-    right: 25px;
+    right: 20px;
     z-index: 100;
 }
 
@@ -679,7 +679,7 @@ span {
     height: 25px;
     background: rgba(95, 95, 95, 0.452);
     padding: 5px 10px;
-    font-size: 10px;
+    font-size: 9px;
     box-sizing: border-box;
 }
 
