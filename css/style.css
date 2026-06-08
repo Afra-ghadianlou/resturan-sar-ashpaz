@@ -641,7 +641,11 @@ span {
 /* فوتر */
 .footer {
     height: 330px;
-    background-color: var(--white-color3);
+    background-image: url(../image/77.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgb(95, 95, 95);
+    background-blend-mode: multiply;
     text-align: center;
     padding-top: 15px;
     position: relative;
