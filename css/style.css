@@ -46,13 +46,17 @@ li {
     list-style-type: none;
 }
 
+img{
+    object-fit: cover;
+}
+
 :root {
     /* --white-color3: blueviolet; یاسی */
     /* --white-color3: #F875AA; صورتی */
     /* --white-color5: #c5a059; نسکافه ای */
     /* --white-color5: #d4af37; زرد */
 
-    --white-color1: #413f3f;
+    --white-color1: #181818;
     --white-color2: #d4d4d4;
     --white-color3: #800020cb;
     --white-color4: #800020;
@@ -295,7 +299,9 @@ body {
     border-radius: 5px;
     font-family: 'estandard';
     outline: none;
-    padding: 0 10px;
+    padding-right: 70px; /* به اندازه عرض دکمه */
+    color: white;
+    font-size: 20px;
 }
 
 .content-search input::placeholder {
@@ -303,7 +309,8 @@ body {
     text-align: center;
     font-family: "tanha";
     position: relative;
-    left: -40px;
+    left: -5px;
+    font-size: 14px;
 }
 
 .search-btn {
@@ -365,7 +372,7 @@ body {
     font-size: 10px;
     position: relative;
     top: 27px;
-    right: 20px;
+    /* right: 0px; */
     z-index: 100;
 }
 
@@ -652,7 +659,7 @@ span {
 }
 
 .pic-social {
-    width: 35px;
+    width: 19px;
     height: 35px;
     padding: 0 5px;
     cursor: pointer;
@@ -666,7 +673,7 @@ span {
 }
 
 .pic-contacts {
-    width: 25px;
+    width: 21px;
     height: 25px;
     cursor: pointer;
 }
@@ -1059,14 +1066,14 @@ span {
     }
 
     .contact .pic-footer {
-        width: 210px;
+        width: 270px;
         position: relative;
-        bottom: 22px;
+        bottom: 30px;
     }
 
     .privacy-policy {
         height: 40px;
-        font-size: 13px;
+        font-size: 11px;
     }
 
     .privacy-policy p {
