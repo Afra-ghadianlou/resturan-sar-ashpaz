@@ -669,12 +669,20 @@ span {
     justify-items: center;
 }
 
+.social-media{
+    margin-top: 8px;
+}
+
+.contacts{
+    margin-top: 15px;
+}
+
 .pic-social {
     width: 45px;
     height: 35px;
     padding: 0 5px;
     cursor: pointer;
-    margin-bottom: 16px;
+    /* margin-bottom: 16px; */
 }
 
 .pic-contacts {
