@@ -51,19 +51,12 @@ img{
 }
 
 :root {
-    /* --white-color3: blueviolet; یاسی */
-    /* --white-color3: #F875AA; صورتی */
-    /* --white-color5: #c5a059; نسکافه ای */
-    /* --white-color5: #d4af37; زرد */
-
-    --white-color1: #1E1E1E;
+    --white-color1: #2B2B2B;
     --white-color2: #d4d4d4;
-    --white-color3: #800020cb;
-    --white-color4: #800020;
-    --white-color5: #556B2F;
-    --white-color6: #F5E6CA;
-    --white-color10: #3a4349;
-    --white-color11: #708090;
+    --white-color3: #556B2F;
+    --white-color4: #F5E6CA;
+    --white-color5: #3a4349;
+    --white-color6: #708090;
 }
 
 body {
@@ -87,7 +80,7 @@ body {
 }
 
 /* تنظیمات نوبار */
-.navBar {
+.navbar {
     width: 100%;
     height: 60px;
     background-color: rgba(95, 95, 95, 0.801);
@@ -103,12 +96,12 @@ body {
     box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1)0px 16px 56px;
 }
 
-.navBar.scrolled {
-    background-color: var(--white-color10);
+.navbar.scrolled {
+    background-color: var(--white-color5);
     /* حالت مات کامل */
 }
 
-.rwd-login{
+.mobile-login{
     display: none;
 }
 
@@ -125,7 +118,7 @@ body {
 
 .login {
     display: block;
-    background-color: var(--white-color5);
+    background-color: var(--white-color3);
     border-radius: 8px;
     width: 35px;
     height: 35px;
@@ -172,7 +165,7 @@ body {
     height: 4px;
     width: 100%;
     border-radius: 5px;
-    background-color: var(--white-color5);
+    background-color: var(--white-color3);
 }
 
 .line1 {
@@ -226,7 +219,7 @@ body {
     top: 0;
 }
 
-.titel-menu {
+.menu-title {
     position: absolute;
     top: 140px;
     left: 50%;
@@ -234,7 +227,7 @@ body {
     width: 170px;
     background-color: var(--white-color1);
     border-radius: 10px;
-    border: solid 2px var(--white-color3);
+    border: solid 2px var(--white-color4);
     font-size: 15px;
     padding: 5px;
     z-index: 1001;
@@ -246,24 +239,25 @@ body {
     margin: 90px auto;
     padding: 15px;
     border-radius: 20px;
-    border: solid 2px var(--white-color3);
-    box-shadow: 0 0 8px 3.3px var(--white-color10);
+    border: solid 2px var(--white-color4);
+    box-shadow: 0 0 8px 3.3px var(--white-color5);
 }
 
 .menu-item {
     line-height: 60px;
-    background-color: var(--white-color5);
+    background-color: var(--white-color3);
     margin-top: 25px;
     border-radius: 10px;
-    box-shadow: 0 0 8px 3.3px var(--white-color10);
-    color: var(--white-color1);
+    box-shadow: 0 0 8px 3.3px var(--white-color5);
+    color: var(--white-color2);
     font-size: 20px;
-    border: 2px solid var(--white-color3);
+    border: 2px solid var(--white-color4);
 }
 
 .menu-item:hover {
-    background-color: var(--white-color6);
-    color: var(--white-color4);
+    background-color: var(--white-color4);
+    color: var(--white-color3);
+    border: 3px solid var(--white-color3);
     text-shadow: 0 2px 1px var(--white-color2)
 }
 
@@ -276,7 +270,7 @@ body {
     margin: auto;
 }
 
-.titel-feature {
+.feature-title {
     font-size: 20px;
 }
 
@@ -284,7 +278,7 @@ body {
     width: 80%;
     height: 20%;
     backdrop-filter: blur(5px);
-    box-shadow: 0 0 0 2.5px var(--white-color5);
+    box-shadow: 0 0 0 2.5px var(--white-color4);
     border: 1.5px solid transparent;
     border-radius: 5px;
     display: grid;
@@ -322,17 +316,18 @@ input[type="search"]::-webkit-search-cancel-button {
 .search-btn {
     width: 60px;
     height: 30px;
-    background-color: var(--white-color5);
+    background-color: var(--white-color4);
     border-radius: 5px;
     border: none;
     position: absolute;
     right: 2px;
     top: 2px;
     font-family: "vazir";
+    color: var(--white-color3);
 }
 
 .content-search .search-btn:hover {
-    background-color: var(--white-color2);
+    background-color: var(--white-color3);
     color: var(--white-color4);
     cursor: pointer;
 }
@@ -351,20 +346,20 @@ input[type="search"]::-webkit-search-cancel-button {
     width: 30px;
 }
 
-.text-feature {
+.feature-text {
     font-size: 14px;
 }
 
 /* قسمت تخفیفات */
 .container-off-food {
-    background: var(--white-color10);
+    background: var(--white-color5);
     width: 335px;
     text-align: center;
     height: 140px;
     display: grid;
     grid-template-areas:
         "a b c d e f";
-    border: 2px dashed var(--white-color6);
+    border: 2px dashed var(--white-color4);
     border-radius: 10px 0 10px 0;
     margin: auto;
     overflow: scroll;
@@ -399,7 +394,7 @@ input[type="search"]::-webkit-search-cancel-button {
 }
 
 .off-info {
-    background-color: var(--white-color6);
+    background-color: var(--white-color3);
     height: 30px;
     width: 30px;
     border-radius: 50%;
@@ -408,7 +403,7 @@ input[type="search"]::-webkit-search-cancel-button {
     right: 10px;
     bottom: 60px;
     border: 1px solid;
-    color: var(--white-color1);
+    color: var(--white-color2);
 }
 
 .off-info h3 {
@@ -460,7 +455,7 @@ input[type="search"]::-webkit-search-cancel-button {
     height: 150px;
 }
 
-.pic-info {
+.info-picture {
     position: relative;
     width: 150px;
     height: 150px;
@@ -478,11 +473,11 @@ input[type="search"]::-webkit-search-cancel-button {
 
 .info a {
     font-size: 10px;
-    color: var(--white-color6);
+    color: var(--white-color4);
 }
 
 .info a:hover {
-    color: var(--white-color4);
+    color: var(--white-color3);
 }
 
 /* قسمت انتخاب غذا */
@@ -518,9 +513,9 @@ input[type="search"]::-webkit-search-cancel-button {
     border-radius: 50%;
     margin: 0 10px;
     cursor: pointer;
-    border: 2px solid var(--white-color5);
+    border: 2px solid var(--white-color4);
     padding: 5px;
-    box-shadow: 0 0 5px 3.3px var(--white-color10);
+    box-shadow: 0 0 5px 3.3px var(--white-color5);
 }
 
 .card-back {
@@ -536,21 +531,21 @@ input[type="search"]::-webkit-search-cancel-button {
 
 .card:hover .card-back {
     transform: rotateY(0);
-    border: 2px solid var(--white-color6);
+    border: 3px solid var(--white-color3);
     padding: 5px;
-    box-shadow: 0 0 5px 2.5px var(--white-color10);
+    box-shadow: 0 0 5px 2.5px var(--white-color5);
 }
 
 .btn-select-food {
     all: unset;
-    color: black;
+    color: var(--white-color4);
     display: inline-block;
     width: 66px;
     height: 20px;
     position: absolute;
     top: 23px;
-    right: 0px;
-    background-color: var(--white-color6);
+    left: -2px;
+    background-color: var(--white-color3);
     border-radius: 8px;
     font-size: 8px;
     text-align: center;
@@ -560,11 +555,11 @@ input[type="search"]::-webkit-search-cancel-button {
 .titel-food {
     width: 100%;
     height: 50px;
-    background-color: var(--white-color5);
+    background-color: var(--white-color3);
     text-align: center;
     border-top: solid 2px var(--white-color4);
     border-bottom: solid 2px var(--white-color4);
-    color: var(--white-color1);
+    color: var(--white-color2);
 }
 
 span {
@@ -589,7 +584,7 @@ span {
 
 .img-foods {
     border-radius: 20px;
-    border: dashed 2px var(--white-color6);
+    border: dashed 2px var(--white-color3);
     width: 140px;
     height: 140px;
     overflow: hidden;
@@ -604,7 +599,7 @@ span {
     display: none;
     width: 125px;
     height: 110px;
-    background-color: gray;
+    background-color: var(--white-color3);
     padding: 10px;
     border-radius: 10px;
     position: relative;
@@ -612,7 +607,7 @@ span {
     bottom: 135px;
     text-align: center;
     font-size: 11px;
-    color: var(--white-color1);
+    color: var(--white-color4);
 }
 
 .card-foods:hover .info-food {
@@ -620,7 +615,7 @@ span {
 }
 
 .info-food div {
-    border: solid 2px var(--white-color6);
+    border: solid 2px var(--white-color4);
     width: 105px;
     height: 90px;
     border-radius: 5px;
@@ -636,7 +631,7 @@ span {
     position: absolute;
     bottom: 0px;
     right: 29px;
-    background: var(--white-color6);
+    background: var(--white-color4);
 }
 
 /* فوتر */
@@ -705,7 +700,7 @@ span {
 }
 
 .privacy-policy a{
-    color: var(--white-color5);
+    color: var(--white-color4);
     font-size: 13px;
 }
 
@@ -734,10 +729,10 @@ span {
     left: 50%;
     transform: translateX(-50%);
     width: 100px;
-    background: var(--white-color6);
+    background: var(--white-color4);
     text-align: center;
     border-radius: 5px;
-    border: 1px solid var(--white-color4);
+    border: 2.5px solid var(--white-color3);
     z-index: 998;
     color: var(--white-color1);
 }
@@ -758,7 +753,7 @@ span {
     width: 150px;
     height: 25px;
     border-radius: 5px;
-    border: 1px solid var(--white-color4);
+    border: 2.5px solid var(--white-color3);
     padding: 10px;
     font-size: 14px;
 }
@@ -774,14 +769,14 @@ span {
 }
 
 .border {
-    border: 2px solid var(--white-color4);
+    border: 3px solid var(--white-color3);
     width: 310px;
     height: 590px;
     border-radius: 10px;
     position: relative;
     top: 116px;
     left: 0px;
-    box-shadow: 0 0 8px 3.3px var(--white-color10);
+    box-shadow: 0 0 8px 3.3px var(--white-color5);
     margin: auto;
 }
 
@@ -800,8 +795,8 @@ span {
     width: 50%;
     height: 40px;
     border-radius: 0 10px 10px 0;
-    background: var(--white-color6);
-    border: 2px solid var(--white-color4);
+    background: var(--white-color4);
+    border: 2px solid var(--white-color3);
 }
 
 .btn-home {
@@ -810,9 +805,9 @@ span {
     bottom: 0px;
     width: 50%;
     height: 40px;
-    background: var(--white-color6);
+    background: var(--white-color4);
     border-radius: 10px 0 0 10px;
-    border: 2px solid var(--white-color4);
+    border: 2px solid var(--white-color3);
 }
 
 .home-link {
@@ -848,7 +843,7 @@ span {
 }
 
 .form_login p :hover {
-    color: var(--white-color4);
+    color: var(--white-color3);
 }
 
 .footer-info-login {
@@ -900,7 +895,7 @@ span {
     width: 150px;
     height: 25px;
     border-radius: 5px;
-    border: 1px solid var(--white-color4);
+    border: 2.5px solid var(--white-color3);
     padding: 10px;
     font-size: 14px;
 }
@@ -950,8 +945,8 @@ span {
     width: 50%;
     height: 40px;
     border-radius: 0 10px 10px 0;
-    border: 2px solid var(--white-color4);
-    background: var(--white-color6);
+    border: 2px solid var(--white-color3);
+    background: var(--white-color4);
 }
 
 .submit-link {
@@ -977,7 +972,7 @@ span {
 }
 
 .back-to-login:hover {
-    color: var(--white-color4);
+    color: var(--white-color3);
 }
 
 .footer-info-submit {
@@ -1010,13 +1005,13 @@ span {
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    border: 2px solid var(--white-color6);
+    border: 2px solid var(--white-color4);
 }
 
 .info-blog {
     width: 300px;
     height: 270px;
-    background: var(--white-color11);
+    background: var(--white-color6);
     opacity: 0.9;
     height: 270px;
     position: relative;
@@ -1026,7 +1021,7 @@ span {
     padding: 10px;
     color: rgb(36, 36, 36);
     text-align: justify;
-    border: 2px solid var(--white-color6);
+    border: 2px solid var(--white-color4);
 }
 
 .info-blog:last-child {
@@ -1038,13 +1033,20 @@ span {
     right: 171px;
     bottom: 28px;
     padding: 7px;
-    background: var(--white-color6);
+    background: var(--white-color4);
     border: none;
     border-top: 1px solid;
     border-right: 1px solid;
     border-radius: 0 10px 0 20px;
     cursor: pointer;
     font-family: 'tanha';
+}
+
+.btn-blog:hover{
+    background-color: var(--white-color3);
+    color: var(--white-color4);
+    bottom: 26px;
+    height: 32px;
 }
 
 /* RWD */
@@ -1065,7 +1067,7 @@ span {
         height: 160px;
     }
 
-    .pic-info {
+    .info-picture {
         width: 160px;
         height: 160px;
     }
@@ -1117,7 +1119,7 @@ span {
         display: none;
     }
 
-    .titel-menu{
+    .menu-title{
         display: none;
     }
 
@@ -1134,14 +1136,20 @@ span {
         all: unset;
     }
 
+    .menu-auth{
+        margin-left: -135px;
+    }
+
     .card-center li{
         all: unset;
         display: inline-block;
+        padding-left: 10px;
     }
 
     .menu-item:hover{
         padding: 5px;
         border-radius: 5px;
+        background: none;
     }
 
     .menu-item{
@@ -1151,7 +1159,7 @@ span {
     }
 
     /* ریسپانسیو لوگو */
-    .navBar .logo{
+    .navbar .logo{
         position: absolute;
         right: 10px;
     }
@@ -1161,33 +1169,38 @@ span {
         display: none;
     }
 
-    .rwd-login{
+    .mobile-login{
         display: block;
         position: fixed;
         position: absolute;
         left: 10px;
     }
 
-    .rwd-login .signing , .submit{
+    .mobile-login .signin-btn , .signup-btn{
         display: inline-block;
         margin-left: 10px;
-        background: var(--white-color5);
+        background: var(--white-color3);
         padding: 6px;
         border-radius: 5px;
         position: relative;
         top: 12px;
+        border: 2px solid var(--white-color4);
     }
 
-    .rwd-login a{
+    .mobile-login a{
         color: #fff;
-        text-shadow: 0 2px 1px var(--white-color4);
     }
 
-    .signing a:hover ,
-    .submit a:hover{
-        background: var(--white-color6);
-        color: var(--white-color10);
-        text-shadow: 0 2px 1px var(--white-color2);
+    .signin-btn:hover ,
+    .signup-btn:hover{
+        background-color: var(--white-color4);
+        border: 3px solid var(--white-color3);
+        cursor: pointer;
+    }
+
+    .signin-btn:hover a ,
+    .signup-btn:hover a{
+        color: var(--white-color1);
     }
 
     /* ریسپانسیو صفحه غذاها */
@@ -1309,7 +1322,7 @@ span {
         position: relative;
         top: 30px;
         margin-right: 35px;
-        color: var(--white-color1);
+        color: var(--white-color2);
     }
 
     .form_submit input{
@@ -1339,7 +1352,7 @@ span {
     .back-to-login{
         top: 30px;
         right: 120px;
-        color: var(--white-color1);
+        color: rgb(192, 192, 192);
     }
 
     .title{
@@ -1366,7 +1379,7 @@ span {
         position: relative;
         top: 120px;
         margin-right: 35px;
-        color: var(--white-color1);
+        color: var(--white-color2);
     }
 
     .form_login input{
@@ -1398,11 +1411,11 @@ span {
     .form_login p{
         top: 220px;
         right: 70px;
-        color: var(--white-color1);
+        color: #fff;
     }
 
     .form_login p a{
-        color: var(--white-color5);
+        color: rgb(192, 192, 192);
     }
 }
 
@@ -1424,30 +1437,3 @@ span {
         left: 420px;
     }
 }
-
-
-/* 
-🎨 ترکیب پیشنهادی (Warm & Elegant)
-- رنگ اصلی (Primary): قهوه‌ای شکلاتی (#4E342E) → حس گرما و غذا  
-- رنگ مکمل (Secondary): کرم روشن (#F5E9DA) → برای پس‌زمینه ساده و خوانا  
-- رنگ تاکیدی (Accent): طلایی مات (#C19A6B) → برای دکمه‌ها یا جزئیات لوکس  
-- رنگ متنی (Text): خاکستری تیره نزدیک به مشکی (#212121)  
-
-🎨 ترکیب پیشنهادی (Modern Minimal)
-- رنگ اصلی: سبز زیتونی تیره (#556B2F)  
-- رنگ مکمل: بژ روشن (#EDE6D6)  
-- رنگ تاکیدی: سبز روشن‌تر (#8F9779)  
-- رنگ متنی: خاکستری خیلی تیره (#2C2C2C)  
-
-🎨 ترکیب پیشنهادی (Classic Restaurant)
-- رنگ اصلی: قرمز شرابی (#8B0000)  
-- رنگ مکمل: کرم مایل به سفید (#FAF3E0)  
-- رنگ تاکیدی: قهوه‌ای گرم (#6B4226)  
-- رنگ متنی: خاکستری تیره (#333333)  
-
-این سه پالت هر کدوم یک حس متفاوت میدن:  
-- اولی لوکس و گرم،  
-- دومی مدرن و مینیمال،  
-- سومی کلاسیک و سنتی.  
-
-👉 می‌خوای من برایت یک پالت رنگ آماده در قالب تصویر بسازم تا راحت‌تر ببینی کدوم حس به رستورانت می‌خوره؟ */
