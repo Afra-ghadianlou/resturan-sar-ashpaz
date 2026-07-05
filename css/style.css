@@ -635,6 +635,22 @@ span {
 }
 
 /* فوتر */
+.footer-logo{
+    display: none;
+}
+
+.media-partition{
+    display: none;
+}
+
+.cantact-partirion{
+    display: none;
+}
+
+.footer-enamad{
+    display: none;
+}
+
 .footer {
     height: 370px;
     background-image: url(../image/77.jpeg);
@@ -1243,62 +1259,97 @@ span {
     }
 
     /* ریسپانسیو قسمت فوتر */
-    .footer{
-        padding: 20px;
+    .footer-partition{
         display: grid;
-        grid-template-columns: repeat(4,1fr);
+        grid-template-columns: repeat(3,1fr);
     }
 
-    .footer h3{
-        width: 300px;
-        position: relative;
-        left: 10px;
+    /* .info-partition{
+        
+    } */
+
+    .footer-logo{
+        display: block;
+        width: 150px;
+        height: 150px;
+        margin-right: 119px;
     }
 
     .footer-paragraph{
-        position: relative;
-        left: 290px;
-        top: 25px;
-        font-size: 14px;
-        width: 250px;
+        margin-top: -50px;
+        width: 400px;
+    }
+
+    .footer-enamad{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        justify-items: center;
+    }
+
+    .enamd-logo{
+        width: 80px;
+        margin-top: 20px;
+        height: 93px;
+    }
+
+    .media-partition{
+        display: block;
+        margin-right: 40px;
+        margin-top: 85px;
+    }
+
+    .cantact-partirion{
+        display: block;
+        margin-right: 35px;
+        margin-top: 85px;
+    }
+
+    .media-partition ul li{
+        height: 10px;
+        margin-top: 50px;
+        font-size: 12px;
+    }
+
+    .media-partition ul li:last-child{
+        width: 168px;
+    }
+
+    .cantact-partirion ul li{
+        height: 15px;
+        margin-top: 50px;
+        font-size: 12px;
+    }
+
+    .footer{
+        width: 100%;
+        height: 525px;
+        padding: 20px;
+    }
+
+    .footer-title{
+        width: 300px;
+        position: absolute;
+        left: 18px;
+        bottom: -440px;
     }
 
     .pic-social{
-        position: relative;
-        left: 160px;
-        top: 120px;
-        width: 150px;
-        height: 40px;
-        border-radius: 5px;
-        padding: 3px;
-        background: var(--white-color5);
-    }
-
-    .pic-social:hover{
-        background: var(--white-color6);
-    }
-
-    .pic-footer{
         display: none;
-        /* position: relative;
-        left: 420px;
-        top: 208px; */
     }
 
     .pic-contacts{
-        position: relative;
-        left: 135px;
-        top: 120px;
-        width: 150px;
-        height: 28px;
-        border-radius: 5px;
-        background: var(--white-color5);
+        display: none;
     }
 
-    .pic-contacts:hover{
-        background: var(--white-color6);
+    .privacy-policy{
+        width: 100%;
+        bottom: 16px;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        align-content: center;
+        justify-items: center;  
+        border-radius: 15%;
     }
-
     /* ریسپانسیو صفحه ثبت نام */
     .back_container{
         filter: none;
